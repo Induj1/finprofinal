@@ -10,26 +10,26 @@ const Events = () => {
     {
       id: 1,
       title: 'FINMEET',
-      date: 'February 8, 2025',
-      location: 'Delhi',
-      time: 'Professional Networking & Knowledge Exchange',
-      image: '/lovable-uploads/delhi.jpg'
-    },
-    {
-      id: 2,
-      title: 'FINMEET',
       date: 'April 12, 2025',
       location: 'Delhi',
       time: 'Industry Insights & Collaboration',
       image: '/lovable-uploads/delhi.jpg'
     },
     {
-      id: 3,
+      id: 2,
       title: 'FINMEET',
-      date: 'June 14, 2025',
+      date:'June 14, 2025',
       location: 'Bangalore',
       time: 'National Conference & Workshops',
       image: '/lovable-uploads/blr.jpg'
+    },
+    {
+      id: 3,
+      title: 'FINMEET',
+      date:'August 15-17, 2025',
+      location: 'Hyderabad',
+      time: 'FINMEET - Family Outing',
+      image: '/lovable-uploads/hyderabad.jpg'
     }
   ];
 
