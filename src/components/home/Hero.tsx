@@ -59,24 +59,12 @@ const Hero = () => {
                   className="w-full h-auto rounded"
                 />
                 <div className="absolute -bottom-4 -left-4 bg-blue-500 text-white px-6 py-2 rounded-full shadow-lg text-lg font-semibold hover:bg-blue-600 hover:scale-105 transition-all duration-300">
-                  Upcoming Workshops
+                  Upcoming event
                 </div>
               </div>
             </ScaleIn>
             
-            <SlideInRight delay={300} duration={1000}>
-              <div className="absolute top-1/2 -right-16 transform -translate-y-1/2 bg-gradient-to-br from-amber-400 to-orange-500 p-4 rounded-lg shadow-xl rotate-6 hover:rotate-0 transition-all duration-500">
-                <img
-                  src="/lovable-uploads/009eb2bd-d27e-4631-a492-dddd019da8d9.png"
-                  alt="Networking Event"
-                  className="w-52 h-auto rounded"
-                />
-                <div className="absolute -bottom-3 -right-3 bg-green-500 text-white px-4 py-1 rounded-full shadow-lg text-sm font-semibold hover:bg-green-600 hover:scale-105 transition-all duration-300">
-                  Networking
-                </div>
-              </div>
-            </SlideInRight>
-          </div>
+                     </div>
         </div>
       </div>
       
