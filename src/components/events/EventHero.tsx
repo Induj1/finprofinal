@@ -66,18 +66,39 @@ const EventHero: React.FC = () => {
                 This isn't just a meetup, it's where momentum turns into mandates, and relationships turn into results.
               </p>
               
-              <div className="text-center">
-                <Link to="/events/1">
-                  <Button 
-                    variant="secondary" 
-                    size="lg"
-                    className="shadow-glow group"
-                  >
-                    Secure Your Spot Now
-                    <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </Link>
-              </div>
+       <div className="flex justify-center gap-4">
+  <a 
+    href="https://forms.gle/8ZuGq8yyPbJh6WTe7" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <Button 
+      variant="secondary" 
+      size="lg" 
+      className="shadow-glow group"
+    >
+      Member Link
+      <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+    </Button>
+  </a>
+
+  <a 
+    href="https://forms.gle/SudgU6BrJUmvDP9Q7" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <Button 
+      variant="secondary" 
+      size="lg" 
+      className="shadow-glow group"
+    >
+      Guest Link
+      <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+    </Button>
+  </a>
+</div>
+
+
               
               <div className="mt-6 text-center">
                 <p className="text-sm text-gray-500">
