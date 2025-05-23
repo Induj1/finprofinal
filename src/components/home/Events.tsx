@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FadeInUp, FadeIn } from '@/components/ui/Animation';
@@ -9,11 +8,12 @@ const Events = () => {
   const upcomingEvents = [
     {
       id: 1,
-      title: 'FINMEET',
-      date: 'April 12, 2025',
-      location: 'Delhi',
-      time: 'Industry Insights & Collaboration',
-      image: '/lovable-uploads/delhi.jpg'
+      title: 'FINMEET PUNE',
+      date: 'June 14, 2025',
+      location: 'Pune',
+      time: 'India\'s Premier Finance Networking Event',
+      image: '/lovable-uploads/pune.jpg',
+      featured: true
     },
     {
       id: 2,
@@ -30,6 +30,7 @@ const Events = () => {
       location: 'Hyderabad',
       time: 'FINMEET - Family Outing',
       image: '/lovable-uploads/hyderabad.jpg'
+
     }
   ];
 
@@ -71,13 +72,18 @@ const Events = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {upcomingEvents.map((event, index) => (
             <FadeInUp key={event.id} delay={100 * (index + 1)}>
-              <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 h-full group">
-                <div className="aspect-w-16 aspect-h-9 w-full overflow-hidden">
+              <div className={`bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 h-full group ${event.featured ? 'ring-2 ring-finpro-red' : ''}`}>
+                <div className="aspect-w-16 aspect-h-9 w-full overflow-hidden relative">
                   <img 
                     src={event.image} 
                     alt={event.title} 
                     className="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   />
+                  {event.featured && (
+                    <div className="absolute top-4 right-4 bg-finpro-red text-white text-xs font-bold px-3 py-1 rounded-full">
+                      Featured Event
+                    </div>
+                  )}
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-3 font-montserrat">{event.title}</h3>
@@ -98,7 +104,9 @@ const Events = () => {
                   </div>
                   
                   <Link to={`/events/${event.id}`}>
-                    <Button className="w-full" variant="secondary">Register Now</Button>
+                    <Button className="w-full" variant={event.featured ? "secondary" : "secondary"}>
+                      {event.featured ? "Register Now" : "Register Now"}
+                    </Button>
                   </Link>
                 </div>
               </div>

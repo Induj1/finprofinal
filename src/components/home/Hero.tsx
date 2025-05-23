@@ -54,7 +54,7 @@ const Hero = () => {
             <ScaleIn duration={1000}>
               <div className="relative bg-white p-6 rounded-lg shadow-xl max-w-md mx-auto transform rotate-3 hover:rotate-0 transition-all duration-500">
                 <img
-                  src="/lovable-uploads/delhi.jpg"
+                  src="/lovable-uploads/pune.jpg"
                   alt="Financial Empowerment Workshop"
                   className="w-full h-auto rounded"
                 />
